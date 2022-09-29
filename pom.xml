@@ -15,6 +15,12 @@
         <module>eddymall-common</module>
         <module>eddymall-auth</module>
         <module>eddymall-gateway</module>
+        <module>eddymall-coupons</module>
+        <module>eddymall-security</module>
+        <module>eddymall-search</module>
+        <module>eddymall-product</module>
+        <module>eddymall-portal</module>
+        <module>eddymall-order</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,6 +39,7 @@
         <jjwt.version>0.9.1</jjwt.version>
         <lombok.version>1.18.8</lombok.version>
         <nacos.version>2021.1</nacos.version>
+        <open.feign.version>3.1.4</open.feign.version>
     </properties>
 
     <dependencyManagement>
@@ -61,6 +68,13 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
                 <version>${nacos.version}</version>
+            </dependency>
+
+            <!-- OpenFeign -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${open.feign.version}</version>
             </dependency>
 
             <!-- Druid -->
